@@ -54,6 +54,7 @@ h2{font-family:'Pinyon Script',cursive;font-weight:400;font-size:12cqw;margin:0 
 .in2{position:absolute;inset:23% 13% 7%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:3.55cqw;line-height:1.42}
 .arch p{margin:0 0 2.4cqw}.arch .dv{font-size:4.8cqw;line-height:1.7;color:#8a6218}.arch .hosts+p{font-size:4.6cqw;line-height:1.5;padding:0 3cqw}.arch .q{font-style:italic;color:var(--gold);font-size:3.9cqw}
 .arch .nm{font-size:12cqw;line-height:1;margin:0}.arch .hosts{font-size:9cqw;margin:0 0 5cqw;line-height:1.15}.arch .dv{margin-bottom:7cqw!important}
+.cpl{position:absolute;top:14%;left:0;right:0;margin:0 auto;width:37cqw;height:auto;pointer-events:none;filter:drop-shadow(0 .8cqw 1.6cqw rgba(70,50,110,.15))}
 .ht{width:20cqw;height:auto;margin:1cqw 0}.ht path{fill:none;stroke:var(--gold);stroke-width:2.2;stroke-dasharray:300;stroke-dashoffset:300;transition:stroke-dashoffset 2.4s ease .6s}.in .ht path{stroke-dashoffset:0}
 .ht text{font-family:'Pinyon Script',cursive;font-size:23px;fill:var(--ink)}
 .dl{display:flex;align-items:center;gap:2cqw;width:100%;margin:2cqw 0}.dl::before,.dl::after{content:"";flex:1;height:1px;background:var(--gold)}.dl b{font-weight:600;white-space:nowrap;font-size:3.7cqw}
@@ -69,7 +70,7 @@ h2{font-family:'Pinyon Script',cursive;font-weight:400;font-size:12cqw;margin:0 
 .note{margin:2cqw 8cqw 0;padding:4cqw 5cqw;border:1.5px solid var(--gold);border-radius:3cqw;font-size:4.5cqw;font-style:italic;line-height:1.4}
 .rsvp{margin-top:12cqw;font-size:4.6cqw;line-height:1.55}.rsvp h3{font-family:'Pinyon Script',cursive;font-weight:400;font-size:10cqw;margin:0 0 2cqw}.rsvp a{display:block;font-size:5.4cqw;text-decoration:none;color:var(--ink);padding:.6cqw 0}
 .cmp{margin-top:11cqw;font-style:italic;color:var(--soft);font-size:4.2cqw}.cmp b{display:block;padding:0 7cqw;margin-top:1.5cqw;font-style:normal;font-weight:600;color:var(--ink);font-size:4.8cqw}
-.mu{position:fixed;z-index:70;bottom:max(16px,env(safe-area-inset-bottom));left:calc(50% + min(50vw,240px) - 58px);width:40px;height:40px;padding:0;border:1.5px solid rgba(180,130,60,.6);border-radius:50%;background:rgba(255,248,235,.75);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);box-shadow:0 2px 12px rgba(100,60,20,.18);cursor:pointer;display:grid;place-items:center;-webkit-tap-highlight-color:transparent;transition:background .2s,box-shadow .2s}
+.mu{position:fixed;z-index:70;bottom:max(16px,env(safe-area-inset-bottom));left:calc(50% - min(50vw,240px) + 18px);width:40px;height:40px;padding:0;border:1.5px solid rgba(180,130,60,.6);border-radius:50%;background:rgba(255,248,235,.75);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);box-shadow:0 2px 12px rgba(100,60,20,.18);cursor:pointer;display:grid;place-items:center;-webkit-tap-highlight-color:transparent;transition:background .2s,box-shadow .2s}
 .mu:active{background:rgba(255,240,210,.95)}.mu[hidden]{display:none}.mu i{display:block;font-style:normal;font-size:20px;color:#7a4010;line-height:1;user-select:none}
 .mu i::before{content:'♪'}.mu:not(.on) i{opacity:.4}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}}
@@ -96,15 +97,12 @@ h2{font-family:'Pinyon Script',cursive;font-weight:400;font-size:12cqw;margin:0 
  <div class="cd rv" style="--d:1.2s" id="cd"><div><b>00</b><span>days</span></div><div><b>00</b><span>hours</span></div><div><b>00</b><span>minutes</span></div><div><b>00</b><span>seconds</span></div></div>
 </section>
 <section class="sec" style="padding-top:2cqw">
- <div class="arch"><div class="in2">
-  <!-- <p class="dv rv">॥ ॐ श्री गणेशाय नमः ॥</p> -->
-  <p class="dv rv"></p>
-  
-  
-  
-  <p class="rv" style="--d:.8s">We</p><p class="hosts sc rv" style="--d:.9s">Smt. Urmila &amp; Sh. Manohar Raina</p>
-  <p class="rv" style="--d:1.1s">feel blessed and delighted to invite you to the wedding ceremony of our beloved daughter</p>
- </div><i class="cr l"></i><i class="cr r"></i></div>
+ <div class="arch">
+  <img class="cpl rv" src="couple.webp" alt="Wedding Ceremony" style="--d:.5s">
+  <div class="in2">
+   <p class="rv" style="--d:.8s">We</p><p class="hosts sc rv" style="--d:.9s">Smt. Urmila &amp; Sh. Manohar Raina</p>
+   <p class="rv" style="--d:1.1s">feel blessed and delighted to invite you to the wedding ceremony of our beloved daughter</p>
+  </div><i class="cr l"></i><i class="cr r"></i></div>
  <div class="arch"><div class="in2">
   <p class="nm sc rv">Plak</p>
   <svg class="ht rv" viewBox="0 0 100 90" style="--d:.3s"><path d="M50 85C20 62 5 45 5 28 5 14 16 5 29 5 38 5 46 10 50 18 54 10 62 5 71 5 84 5 95 14 95 28 95 45 80 62 50 85Z"/><text x="50" y="52" text-anchor="middle">&amp;</text></svg>
